@@ -34,3 +34,20 @@ def delete_file_contents(path):
 #this is gonna be slow writing to the files, so now using variables
 #getting thebest of both worlds
 
+# links in file to set
+# items in set and save to file
+
+#read a file and convert each line to set items
+def file_to_set(file_name):
+    results = set()
+    with open(file_name, 'rt') as f:
+        for line in f:
+            results.add(line.replace('\n', ''))
+    return results
+
+# iterate through a set, each item in the set will be a new line file 
+def set_to_file(links, file):
+    delete_file_contents(file)
+    for link in sorted(links):
+        append_to_file(file, link)
+
