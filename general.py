@@ -30,3 +30,7 @@ def append_to_file(path, data):
 def delete_file_contents(path):
     with open(path, 'w'):
         pass #do nothing
+
+#this is gonna be slow writing to the files, so now using variables
+#getting thebest of both worlds
+
