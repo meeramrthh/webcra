@@ -9,7 +9,7 @@ class Spider:
     project_name = ''
     base_url = ''
     domain_name = ''
-    queue_file = ''         #text file to save (harddrive)
+    queue_file = ''     #text file to save (harddrive)
     crawled_file = ''
     queue = set()       #waiting list (ram)
     crawled = set()     #crawled list
